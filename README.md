@@ -87,9 +87,135 @@ terraform apply
 - For production, use secure secret management for database credentials.
 
 ---
+    <td class="name">
+      
+      <span class="arrow">&#8627;</span>
+      Memory allocation time
+    </td>
+    
+      <td colspan="3" class="usage-cost">Cost depends on usage: $0.000002 per GiB-seconds</td>
+    
+  </tr>
 
-## Next Steps & Recommendations
-- Edit `terraform.tfvars` with your real values before running.
-- Use the Terraform Validate button to check/fix any errors.
-- For production: add VPC, IAM, and monitoring as needed.
-- See each module's README for advanced configuration.
+  
+    
+  <tr class="cost-component">
+    <td class="name">
+      
+      <span class="arrow">&#8627;</span>
+      Number of requests
+    </td>
+    
+      <td colspan="3" class="usage-cost">Cost depends on usage: $0.0000004 per requests</td>
+    
+  </tr>
+
+  
+  
+
+      
+        
+  
+  <tr class="resource top-level">
+    <td class="name">
+      
+      
+      module.dns.module.cloud_dns.google_dns_record_set.cloud-static-records[&#34;app1.example.com./CNAME&#34;]
+    </td>
+    
+  
+    <td class="monthly-quantity"></td>
+  
+  
+    <td class="unit"></td>
+  
+  
+  
+  
+    <td class="monthly-cost"></td>
+  
+
+  </tr>
+  
+  
+  
+    
+  <tr class="cost-component">
+    <td class="name">
+      
+      <span class="arrow">&#8627;</span>
+      Queries
+    </td>
+    
+      <td colspan="3" class="usage-cost">Cost depends on usage: $0.40 per 1M queries</td>
+    
+  </tr>
+
+  
+  
+
+      
+        
+  
+  <tr class="resource top-level">
+    <td class="name">
+      
+      
+      module.dns.module.cloud_dns.google_dns_record_set.cloud-static-records[&#34;app2.example.com./CNAME&#34;]
+    </td>
+    
+  
+    <td class="monthly-quantity"></td>
+  
+  
+    <td class="unit"></td>
+  
+  
+  
+  
+    <td class="monthly-cost"></td>
+  
+
+  </tr>
+  
+  
+  
+    
+  <tr class="cost-component">
+    <td class="name">
+      
+      <span class="arrow">&#8627;</span>
+      Queries
+    </td>
+    
+      <td colspan="3" class="usage-cost">Cost depends on usage: $0.40 per 1M queries</td>
+    
+  </tr>
+
+  
+  
+
+      
+      <tr class="total">
+        <td class="name" colspan="3">Project total</td>
+        <td class="monthly-cost">$73.81</td>
+      </tr>
+    </tbody>
+  </table>
+
+    
+
+    <table class="overall-total">
+      <tbody>
+        <tr class="total">
+          <td class="name" colspan="3">Overall total</td>
+          <td class="monthly-cost">$73.81</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="warnings">
+      <p>11 cloud resources were detected:<br />∙ 6 were estimated<br />∙ 5 were free</p>
+    </div>
+  </body>
+</html>
