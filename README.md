@@ -15,10 +15,10 @@ All resources are orchestrated from the root module, with logical separation int
 graph TD
   subgraph GCP
     DNS["Cloud DNS Zone"]
-    DNS --&gt; CR1["Cloud Run Service 1"]
-    DNS --&gt; CR2["Cloud Run Service 2"]
-    CR1 --&gt; SQL["Cloud SQL (PostgreSQL)"]
-    CR2 --&gt; SQL
+    DNS --> CR1["Cloud Run Service 1"]
+    DNS --> CR2["Cloud Run Service 2"]
+    CR1 --> SQL["Cloud SQL (PostgreSQL)"]
+    CR2 --> SQL
   end
 ```
 
