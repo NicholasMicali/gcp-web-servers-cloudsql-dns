@@ -66,6 +66,19 @@ terraform apply
 - Cloud SQL instance connection name
 - DNS zone name, domain, and name servers
 
+## Terraform Documentation Found
+| Metric                               | Value                   |
+|--------------------------------------|-------------------------|
+| Total Files Analyzed                 | 1,725         |
+| Total Results Found                  | 30         |
+| Total Selected Files                 | 4           |
+
+## Documentation Links
+- [resources cloud_run_service_iam.html.markdown](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_service_iam)
+- [terraform-google-cloud-dns README.md](https://github.com/terraform-google-modules/terraform-google-cloud-dns)
+- [postgresql README.md](https://github.com/terraform-google-modules/terraform-google-sql-db/tree/master/modules/postgresql)
+- [resources cloud_run_service.html.markdown](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_service)
+
 ---
 
 ## Modifying the Project
