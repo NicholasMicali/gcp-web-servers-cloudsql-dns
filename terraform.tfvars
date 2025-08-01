@@ -5,7 +5,8 @@
 project_id = "your-gcp-project-id" # <-- Set your GCP project ID here
 
 # GCP region for all resources
-egion = "us-central1" # Default region; change if needed
+region = "us-central1" # Default region; change if needed
+zone = "us-central1-a" # Zone for Cloud SQL instance
 
 # Cloud Run service names
 web_server_1_name = "web-server-1" # Name for Cloud Run service 1
