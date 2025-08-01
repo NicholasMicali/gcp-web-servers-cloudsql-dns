@@ -1,18 +1,22 @@
 # Root Terraform configuration to orchestrate Cloud Run, Cloud SQL, and DNS modules
 
 module "postgres" {
-  source        = "./cloud_sql"
-  project_id    = var.project_id
-  region        = var.region
-  instance_name = var.cloud_sql_instance_name
-  db_name       = var.db_name
-  user_name     = var.db_user
-  user_password = var.db_password
+  source                  = "./cloud_sql"
+  project_id              = var.project_id
+  region                  = var.region
+  zone                    = var.zone
+  instance_name           = var.cloud_sql_instance_name
+  cloud_sql_instance_name = var.cloud_sql_instance_name
+  db_name                 = var.db_name
+  db_user                 = var.db_user
+  user_password           = var.db_password
+  db_password             = var.db_password
   # Add more variables as needed for customization
 }
 
 module "cloud_run" {
   source                             = "./cloud_run"
+  project_id                         = var.project_id
   region                             = var.region
   web_server_1_name                  = var.web_server_1_name
   web_server_2_name                  = var.web_server_2_name
