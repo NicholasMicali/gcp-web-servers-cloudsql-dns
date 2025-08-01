@@ -11,6 +11,12 @@ variable "region" {
   default     = "us-central1"
 }
 
+variable "zone" {
+  description = "The zone for the Cloud SQL instance."
+  type        = string
+  default     = "us-central1-a"
+}
+
 # Cloud Run web server names and images
 variable "web_server_1_name" {
   description = "Name for the first Cloud Run service."
@@ -87,3 +93,4 @@ variable "cloud_run_service_account_email" {
   description = "Service account email for Cloud Run services (must have Cloud SQL Client role)."
   type        = string
 }
+
